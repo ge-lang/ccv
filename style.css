@@ -1,0 +1,206 @@
+
+#headerTop {
+    background-image: linear-gradient( #cb0035, #e06900);
+  /*  background: linear-gradient(65deg,#f531b4 0%,#f55e45 25%,#ffaf3d 50%,#f55e45 75%,#f531b4 100%);*/
+   /* background: linear-gradient(65deg, #f50081 0%,#cb0035 25%, #f7a311 50%, #f52900 75%,#e06900 100%);*/
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #ffffff;;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(80, 148, 242, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#navbarContainer{
+    z-index:1031;
+
+}
+
+.navbar-nav a{
+    color: #ffffff;
+    font-family: "Segoe UI";
+}
+
+
+.navbar-brand p{
+    font-size:1.8rem;
+    color: #ffffff;
+    font-family: "Segoe UI Black";
+}
+
+
+h1, h2, h3{
+    font-family: "Segoe UI Black";
+}
+
+p{
+    font-family: "Segoe UI";
+}
+
+
+.position1 {
+    position: relative;
+    right: -380px;
+    top: -530px;
+    box-shadow: 0 0 0 38px rgba(0, 0, 0, 0,5);
+}
+
+.position {
+    position: relative;
+    top: -200px;
+}
+
+* { transition: none; }
+
+
+
+
+/* Setting fade transition and default settings */
+ body {
+    color: #000;
+    background-color: #f4f4f4;
+    transition: background-color 1s ease;
+    font-size: 120%;
+    line-height: 1.618;
+}
+
+
+
+/*.panelen h1, .panelen h2 {*/
+h1,  h2 {
+    font-family: "Segoe UI Black";
+    font-size: 3em;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+    background: linear-gradient(65deg,#8d1fea 0%,#6963e7 25%,#3ad5f6 50%,#6963e7 75%,#8d1fea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #183D58;
+    display: table;
+}
+/*.panelen p, .panelen h3, .panelen h4 {*/
+p, h3, h4 {
+
+    font-family: "Segoe UI";
+    max-width: 30em;
+    margin-bottom: 1.618em;
+    background: linear-gradient(65deg,#f531b4 0%,#f55e45 25%,#ffaf3d 50%,#f55e45 75%,#f531b4 100%);
+    /*background: linear-gradient(65deg, #f50081 0%,#cb0035 25%, #f7a311 50%, #f52900 75%,#e06900 100%);*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #183D58;
+    display: table;
+}
+
+
+.panelen a {
+    color: #4332CF;
+}
+
+
+/* panel styles */
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    /*outline: 10px solid hotpink;*/
+    /* turn above on to see the edge of panels */
+}
+
+/* colours */
+.color-violet {
+    background-color: #7a4eab;
+    background-color: #661f93;
+}
+.color-indigo {
+    background-color: #4332cf;
+    background-color: #224299;
+}
+.color-blue {
+    background-color: #2F8FED;
+    background-color: #174385;
+}
+
+.color-white {
+    background-color: #af7fba;
+    background-color: #d4cbc8;
+}
+
+
+.marquee{text-align:left;width:100%;overflow:hidden;white-space: nowrap;}
+.marquee span { display:inline-block;width:100%;text-indent:0;animation: marquee 50s linear infinite}
+.marquee span:hover{animation-play-state: paused}
+@keyframes marquee {
+    0%   { transform: translate(100%, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+@media only screen and (max-width: 440px) {
+    .marquee span{animation:none;padding-left:0}
+}
+
+
+
+/* parallax */
+section {
+    min-height: 1000px;
+    position: relative;
+    width: 100% !important;
+    min-width: 1000px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#story-freext>div:nth-of-type(1) {
+    background: url(img/7.jpg) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    position:absolute;
+    width:100%;
+    top:0;left:0;
+}
+
+#story-freext>div:nth-of-type(2) {
+    background: url(img/Meeuw.png) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    position:absolute;
+    top:0px;left:100px;
+    width:100%;
+}
+
+.parallax-item{position:absolute;z-index:5;top:40px;left:400px;}
+
+
+
+
+/* Paralax Stuff*/
+.parallax-window,
+.parallax-window-two
+{
+    min-height: 500px;
+    background: transparent;
+}
+
+
+
+/* mouseparallax*/
+#container {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide {
+    display: block;
+    position: absolute;
+}
